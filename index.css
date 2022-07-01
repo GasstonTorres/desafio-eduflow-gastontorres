@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ITC Avant Garde Gothic Std";
+    list-style: none;
+}
+
+html {
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ededed;
+    min-width: 300px;
+}
+
+/* NAV BAR */
+
+header {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2F323C;
+    width: 100%;
+    height: 70px;
+}
+
+.navlist {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inicio,
+.productos,
+.clientes,
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 70px;
+    text-decoration: none;
+    color: rgb(229, 229, 229);
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom:5px solid transparent;
+    border-top: 5px solid transparent;
+    font-weight:500;
+    text-decoration: none;
+    color:rgb(229, 229, 229);
+    
+}
+
+.logonav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.inicio:hover, 
+.productos:hover, 
+.clientes:hover,
+.contacto:hover
+{
+    background-color: #f3e17e;
+    color:#0d0325;
+}
+
+
+
+/* HERO */
+
+.portada {
+    width: 100%;
+    height: 722px;
+    background: url("img/pendantLights.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    background-position: center;
+
+}
+
+.textoButtonPortada {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.containTextPortada {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 107.5%;
+    text-align: center;
+    letter-spacing: -0.075em;
+    color:  #2F323C;
+}
+
+.buttonVerProductos {
+    width: 275.83px;
+    height: 50px;
+    background: #2F323C;
+    border: 1px solid #2F323C;
+    border-radius: 7px;
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 105.5%;
+    align-items: center;
+    text-align: center;
+    color: #f5f5f5;
+    margin: 10px;
+
+
+}
+
+.buttonVerProductos:hover {
+    background-color: #f3e17e;
+    color:#0d0325;
+    border: none;
+}
+
+
+
+/*Banner de Empresa*/
+
+.Empresa {
+    width: 100%;
+    height: 400px;
+    background: #FAFAFA;
+    color: #2F323C;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bannerLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 499px;
+    background-color: #FAFAFA;
+    line-height: auto;
+}
+
+.containTextLeft {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    
+}
+
+.bannerLeft h2 {
+    display: block;
+    font-size: 40px;
+    font-weight: 500px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.bannerLeft p {
+    font-size: 20px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+    margin: 10px 0;
+}
+.bannerRight {
+    width: 50%;
+    height: 499px;
+    background:url("img/lamparaMesa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.queBuscas {
+    width: 80%;
+    height: 499px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: auto;
+}
+
+.buscarArticulo {
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    opacity: 80%;
+    border-radius: 5px;
+}
+
+.consultarArticulo {
+    width: 30%;
+    height: 40px;
+    background-color: #FAFAFA;;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.consultarArticulo:hover {
+    background-color: #f3e17e;
+    color:#0d0325;
+}
+
+/*Banner de Empresa - Pequeños dispositivos*/ 
+
+@media (max-width: 720px) {
+    
+    .Empresa {
+        width: 100%;
+        height: 800px;
+        background: #454C5C;
+        color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .bannerLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        background: #FAFAFA;
+        color: #2F323C;
+    }
+    
+    .bannerLeft h2 {
+        font-size: 30px;
+        align-items: left;
+    }
+    
+    .bannerLeft p {
+        font-size: 24px;
+        display: inline-block;
+        font-style: normal;
+        font-weight: 300;
+        align-items: center;
+    }
+
+    .bannerRight {
+        width: 100%;
+        height: 70%;
+        background:url("img/lamparaMesa.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    
+
+
+}
