@@ -225,9 +225,9 @@ nav {
         height: 500px;
         background: url("img/pendantLights.png");
         background-repeat: no-repeat;
-        background-size: 200%;
+        background-size: cover;
         color: black;
-        background-position: 0% 30%;
+        background-position: 50% 30%;
     
     }
     
