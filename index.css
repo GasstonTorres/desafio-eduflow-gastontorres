@@ -84,12 +84,12 @@ nav {
 
 .portada {
     width: 100%;
-    height: 722px;
+    height: 600px;
     background: url("img/pendantLights.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
-    background-position: center;
+    background-position: 50% 30%;
 
 }
 
@@ -100,7 +100,7 @@ nav {
     justify-content: flex-end;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 5%;
 }
 
 .containTextPortada {
@@ -109,7 +109,7 @@ nav {
     font-size: 80px;
     line-height: 107.5%;
     text-align: center;
-    letter-spacing: -0.075em;
+    letter-spacing: -0.07em;
     color:  #2F323C;
 }
 
@@ -128,8 +128,6 @@ nav {
     text-align: center;
     color: #f5f5f5;
     margin: 10px;
-
-
 }
 
 .buttonVerProductos:hover {
@@ -138,11 +136,9 @@ nav {
     border: none;
 }
 
-
-
 /*Banner de Empresa*/
 
-.Empresa {
+.empresa {
     width: 100%;
     height: 400px;
     background: #FAFAFA;
@@ -230,8 +226,29 @@ nav {
 /*Banner de Empresa - Pequeños dispositivos*/ 
 
 @media (max-width: 720px) {
+
+    .portada {
+        width: 100%;
+        height: 500px;
+        background: url("img/pendantLights.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: black;
+        background-position: 50% 30%;
     
-    .Empresa {
+    }
+    
+    .containTextPortada {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 107.5%;
+        text-align: center;
+        letter-spacing: -0.07em;
+        color:  #2F323C;
+    }
+    
+    .empresa {
         width: 100%;
         height: 800px;
         background: #454C5C;
@@ -265,7 +282,7 @@ nav {
 
     .bannerRight {
         width: 100%;
-        height: 70%;
+        height: 60%;
         background:url("img/lamparaMesa.png");
         background-size: cover;
         background-repeat: no-repeat;
