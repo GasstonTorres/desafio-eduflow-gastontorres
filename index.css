@@ -729,3 +729,94 @@ a:visited {
     
     }
 }
+
+
+
+@media (max-width:520px) {
+    .cards-container {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        justify-content: center ;
+        flex-wrap: wrap;
+    }
+    
+    .card-plafones,
+    .card-colgantes,
+    .card-apliques,
+    .card-aranas,
+    .card-depie,
+    .card-deescritorio {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        height: 200px;
+        background-color: #553153;
+        margin: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+    
+    .text-cards {
+        width: 100%;
+        height: 25%;
+        background-color: #fffdfd85;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto 0;
+        text-decoration: none;
+        font-size: 24px;
+       
+    }
+    
+    .card-plafones {
+        background-image: url(img/plafon1.png);
+        background-position: 0 -10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .card-colgantes {
+        background-image: url(img/colgante3.webp);
+        background-position: 0 -200px;
+        background-size: 100%;
+    }
+    .card-apliques {
+        background-image: url(img/aplique1.jpg);
+        background-position: 0 -50px;
+        background-size: cover;
+    }
+    .card-aranas {
+        background-image: url(img/araña1.jpg);
+        background-position: 0 -100px;
+    }
+    .card-depie {
+        background-image: url(img/de-pie1.jpg);
+        background-position: 0 -50px;
+    }
+    .card-deescritorio {
+        background-image: url(img/de-escritorio1.webp);
+        background-position: 0 -70px;
+    }
+    
+    .text-cards > a {
+        color: #303030;
+    }
+    
+    a:visited {
+        color: #303030;
+    }
+    
+    .card-plafones:hover{
+        background-color: rgba(11, 34, 107, 0.164);
+        transition: 0.3s;
+    }
+    
+    .text-cards:hover{
+        height: 100%;
+        transition: 0.3s;
+    
+    }
+}
