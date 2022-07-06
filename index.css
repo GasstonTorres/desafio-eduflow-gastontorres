@@ -297,6 +297,7 @@ nav {
     flex-direction: row;
     justify-content: center ;
     flex-wrap: wrap;
+    
 }
 
 .card-plafones,
@@ -313,8 +314,8 @@ nav {
     margin: 10px;
     background-size: cover;
     background-repeat: no-repeat;
-
-}
+    border-radius: 10px;
+    }
 
 .text-cards {
     width: 100%;
@@ -327,6 +328,7 @@ nav {
     margin: auto 0;
     text-decoration: none;
     font-size: 24px;
+   
    
 }
 
@@ -657,7 +659,7 @@ a:visited {
     .card-deescritorio {
         display: flex;
         align-items: center;
-        width: 70%;
+        width: 80%;
         height: 200px;
         background-color: #553153;
         margin: 10px;
@@ -682,21 +684,22 @@ a:visited {
     
     .card-plafones {
         background-image: url(img/plafon1.png);
+        background-position: 0 -40px;
         background-repeat: no-repeat;
     }
     .card-colgantes {
         background-image: url(img/colgante3.webp);
-        background-position: 0 -150px;
+        background-position: 0 -325px;
         background-size: 100%;
     }
     .card-apliques {
         background-image: url(img/aplique1.jpg);
-        background-position: 0 -50px;
-        background-size: 100%;
+        background-position: 0 -150px;
+        background-size: cover;
     }
     .card-aranas {
         background-image: url(img/araña1.jpg);
-        background-position: 0 -70px;
+        background-position: 0 -200px;
     }
     .card-depie {
         background-image: url(img/de-pie1.jpg);
