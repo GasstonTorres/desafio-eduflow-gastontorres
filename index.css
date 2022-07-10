@@ -17,8 +17,13 @@ body {
 }
 
 a, a:visited, a:hover, a:active {
-    color: none;
+    color: inherit;
   }
+
+  i:hover {
+    color: #f3e17e;
+}
+
 
 /* NAV BAR */
 
@@ -34,6 +39,8 @@ nav {
     width: 100%;
     height: 70px;
     background-color: #2F323C;
+    color:#f3f3f3 ;
+    
     
 }
 
@@ -156,6 +163,7 @@ nav {
     display: flex;
     justify-content: space-between;
     color: #2F323C;
+    background-color: #fafafad7;;
 }
 
 .bannerLeft {
@@ -197,6 +205,8 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .queBuscas {
@@ -243,122 +253,159 @@ nav {
     height: 70px;
     font-weight: 500;
     font-size: 25px;
+    padding-top: 10px;
 }
 
-.cards-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center ;
-    flex-wrap: wrap;
-    padding-top: -20px;
-    padding-bottom: 80px;
-}
-
-.card-plafones,
-.card-colgantes,
-.card-apliques,
-.card-aranas,
-.card-depie,
-.card-deescritorio {
-    display: flex;
-    align-items: center;
-    width: 350px;
-    height: 200px;
-    background-color: #f3f3f3;
-    margin: 10px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-style: none;
-    border-radius: 7px;
-    letter-spacing: 2px;
-    font-weight: 200;
-    box-shadow: -3px 42px 64px -23px rgba(0,9,43,0.4);
--webkit-box-shadow: -3px 42px 64px -23px rgba(0,9,43,0.4);
--moz-box-shadow: -3px 42px 64px -23px rgba(0,9,43,0.4);
-
-    }
-
-.text-cards {
+.all-boxes {
     width: 100%;
-    height: 25%;
-    background-color: #fffdfde5;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    margin: auto 0;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 300;  
-    color: #0d0325;
+    padding: 10px 0 80px 0;
+}
+
+.tipos-luminarias {
+    width: 30%;
+    height: 200px;
+    margin: 10px;
     
 }
 
-.card-plafones {
-    background-image: url(img/plafon1.png);
-    background-position: 0 -50px;
-    background-repeat: no-repeat;
-}
-.card-colgantes {
-    background-image: url(img/colgante3.webp);
-    background-position: 0 -100px;
-    background-size: cover
-}
-.card-apliques {
-    background-image: url(img/aplique1.jpg);
-    background-position: 0 -50px;
-    background-size: 100%;
-}
-.card-aranas {
-    background-image: url(img/araña1.jpg);
-    background-position: 0 -70px;
-}
-.card-depie {
-    background-image: url(img/de-pie1.jpg);
-    background-position: 0 -50px;
-}
-.card-deescritorio {
-    background-image: url(img/de-escritorio1.webp);
-    background-position: 0 -70px;
+.plafones,
+.apliques,
+.colgantes,
+.arana,
+.de-pie,
+.de-escritorio {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(9, 9, 58);
+    font-size: 24px;
+    background-position: center;
+    border: none;
 }
 
-.card-plafones:hover .text-cards,
-.card-colgantes:hover .text-cards,
-.card-apliques:hover .text-cards,
-.card-aranas:hover .text-cards,
-.card-depie:hover .text-cards,
-.card-deescritorio:hover .text-cards {
-    height: 100%;
-    transition: 0.5s;
-    color: #ebebeb;
-    background-color: #33384d9d;
-    border-radius: 7px;
+.plafones {
+    background-image: url("img/plafon1.png");
+    background-size: cover;
 }
+
+.apliques {
+    background-image: url("img/aplique1.jpg");
+    background-size: cover;
+
+}
+.colgantes {
+    background-image: url("img/colgante3.webp");
+    background-size: cover;
+}
+
+.arana {
+    background-image: url("img/araña1.jpg");
+    background-size: cover;
+}
+
+.de-pie {
+    background-image: url("img/de-pie1.jpg");
+    background-size: cover;
+}
+
+.de-escritorio {
+    background-image: url("img/de-escritorio1.webp");
+    background-size: cover;
+}
+
+.text-luminarias {
+    width: 100%;
+    height: 30%;
+    background-color: rgba(255, 255, 255, 0.726);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    letter-spacing: 2px;
+}
+
+.tipos-luminarias:hover .text-luminarias {
+    height: 100%;
+    color: #f3f3f3;
+    background-color: rgba(1, 1, 34, 0.445);
+    border-radius: 7px;
+    transition: 0.2s ease-out;
+    background-size: 110%;
+}
+.tipos-luminarias:hover {
+    background-size: 110%;
+}
+
 
 #check{
     display: none;
 }
+
+@media (max-width: 899px) {
+    .tipos-luminarias {
+        width: 40%;
+        height: 200px;
+        margin: 10px;
+        
+    }
+}
+
+@media (max-width: 720px) {
+    .tipos-luminarias {
+        width: 80%;
+        height: 200px;
+        margin: 10px;
+        
+    }
+}
+
+/*FOOTER*/
 
 footer {
     width: 100%;
     height: 300px;
     background-color: #2f323c;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+
+
 }
 
 .footer-info{
     display: flex;
-    width: 80%;
+    width: 100%;
     flex-direction: column;
-    width: 80%;
-    margin: 40px;
     justify-content: space-around;
-    align-items: center;
-    color: #FAFAFA
+    align-items: left;
+    color: #FAFAFA;
+    margin-left: 50px;
 }
 
+.footer-info > h1,h2,p,img {
+    margin: 2px 0;
+}
 
+.redes-sociales {
+    display: flex;
+    width: 30%;
+    font-size: 30px;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-right: 30px;
+    color: #fff;
+    
+
+}
 
 /*Hero + Banner de Empresa - Pequeños dispositivos*/ 
 
@@ -387,8 +434,8 @@ footer {
     .empresa {
         width: 100%;
         height: 800px;
-        background: #454C5C;
-        color: antiquewhite;
+        background: #fafafad7;
+        color: #fafafad7;;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -400,7 +447,7 @@ footer {
         height: 40%;
         justify-content: center;
         width: 100%;
-        background: #FAFAFA;
+        background: #fafafad7;;
         color: #2F323C;
     }
     
@@ -422,11 +469,16 @@ footer {
         height: 60%;
         background:url("img/lamparaMesa.png");
         background-size: cover;
+        background-color: #fafafad7;;
         background-repeat: no-repeat;
         background-position: center;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
 
     }
-}
 
 @media (max-width: 720px) {
     .checkbutton {
@@ -476,4 +528,43 @@ footer {
         color: #f3e17e;
     }
 
+    footer {
+        width: 100%;
+        height: 400px;
+        background-color: #2f323c;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+    
+    
+    }
+    
+    .footer-info{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+        color: #FAFAFA;
+        margin-left: 50px;
+    }
+    
+    .footer-info > h1,h2,p,img {
+        margin: 2px 0;
+    }
+    
+    .redes-sociales {
+        display: flex;
+        width: 30%;
+        font-size: 30px;
+        justify-content: space-around;
+        padding-top: 20px;
+        margin-right: 30px;
+        color: #fff;
+        
+    
+    }
+
 }
+
