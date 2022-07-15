@@ -40,6 +40,7 @@ nav {
     height: 70px;
     background-color: #2F323C;
     color:#f3f3f3 ;
+    position: fixed;
     
     
 }
@@ -568,3 +569,74 @@ footer {
 
 }
 
+/*COMO COMPRAR*/
+
+hr {
+    width: 80%;
+    color: #2c3e50;
+}
+
+.como-comprar {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.como-comprar-title {
+    margin-top: 30px;
+}
+
+.como-comprar-cards {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content:center;
+    padding: 50px 0;
+
+
+}
+
+.cards-general {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (max-width: 720px) {
+    
+    .cards-general {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (max-width: 520px) {
+    
+
+.como-comprar-cards {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    padding: 50px 0;
+
+
+}
+    
+}
