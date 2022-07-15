@@ -55,9 +55,6 @@ nav {
     margin-right: 20px;
 }
 
-.search-producto-bar:active  .queBuscas:focus
-
-
 .checkbutton {
     display: none;
 }
@@ -584,7 +581,7 @@ hr {
     /*PRODUCTOS CARDS EN PANTALLAS CHICAS*/
     
     .tipos-luminarias {
-        width: 70%;
+        width: 80%;
         height: 200px;
         margin: 10px; 
     }
