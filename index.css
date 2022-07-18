@@ -525,12 +525,12 @@ p {
     }
 
     .search-bar {
-        width: 90%;
+        width: 85%;
     }
 
     .busqueda-nav {
         width: 90%;
-        height: 30px;
+        height: 40px;
         outline: none;
         padding-left: 10px;
     }
@@ -541,7 +541,7 @@ p {
     }
 
     .btn-nav-search {
-        width: 10%;
+        width: 15%;
     }
 
     .btn-nav-search>i {
@@ -620,9 +620,8 @@ p {
     /*PRODUCTOS CARDS EN PANTALLAS CHICAS*/
 
     .tipos-luminarias {
-        width: 80%;
+        width: 90%;
         height: 200px;
-        margin: 10px;
     }
 
     /*COMO COMPRAR PANTALLAS CHICAS*/
