@@ -42,23 +42,42 @@ nav {
     height: 70px;
     background-color: #2F323C;
     color: #f3f3f3;
+    padding: 0 5%;
 }
 
 /*nav bar - opciones*/
 
 .logo-nav {
-    margin-left: 30px;
+    margin-left: 0px;
+}
+
+.logo-nav {
+    display: flex;
+    justify-content: center;
 }
 
 .checkbutton {
     display: none;
 }
 
+.navshopcart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-cart {
+    display: block;
+    width: 60px;
+    text-align: center;
+    font-size: 20px;
+}
+
 
 .navlist {
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -87,7 +106,6 @@ nav {
 
 .inicio:hover,
 .productos:hover,
-.como-comprar:hover,
 .contacto:hover {
     color: #202020;
     transition: 0.1s;
@@ -96,10 +114,7 @@ nav {
 
 /*NAV - SEARCHBAR*/
 
-.logo-nav {
-    display: flex;
-    justify-content: center;
-}
+
 
 .search-div {
     width: 100%;
@@ -134,21 +149,30 @@ nav {
 .portada {
     width: 100%;
     height: 600px;
-    background: url("img/pendantLights.png");
+    background: url("img/lamparaMesa.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 30%;
     color: black;
 }
 
+.bg-gradient {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 31%, rgba(0, 6, 32, 0.5046393557422969) 100%);
+}
+
 .textoButtonPortada {
+    position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 }
 
 .containTextPortada {
@@ -158,14 +182,14 @@ nav {
     line-height: 107.5%;
     text-align: center;
     letter-spacing: -0.009em;
-    color: #2F323C;
+    color: #f9f9f9;
 }
 
 .buttonVerProductos {
     width: 275.83px;
     height: 50px;
-    background: #2F323C;
-    color: #f5f5f5;
+    background: #e7e7e7;
+    color: #323232;
     font-family: 'ITC Avant Garde Gothic Std';
     font-style: normal;
     font-weight: 300;
@@ -173,7 +197,7 @@ nav {
     line-height: 105.5%;
     text-align: center;
     margin: 10px;
-    border: 1px solid #2F323C;
+    border: none;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
@@ -234,7 +258,7 @@ nav {
 .bannerRight {
     width: 50%;
     height: 100%;
-    background: url("img/lamparaMesa.png");
+    background: url("img/colgante3.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -466,14 +490,15 @@ p {
 
     nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-beetween;
     }
 
     /*COMPORTAMIENTO NAV Burger*/
 
     .checkbutton .fa-solid {
         font-size: 26px;
-        margin-right: 30px;
+        margin-right: 10px;
+        order: 1;
     }
 
     .checkbutton .fa-solid:hover {
@@ -494,7 +519,13 @@ p {
         height: auto;
     }
 
-    .navlist li {
+
+    #check:checked~.navlist {
+        right: 0;
+        transition: 0.3s;
+    }
+
+    .navlist>li {
         width: 100%;
         background: #2F323C;
         text-align: center;
@@ -508,10 +539,6 @@ p {
 
     }
 
-    #check:checked~.navlist {
-        right: 0;
-        transition: 0.3s;
-    }
 
     /*search - busqueda dispositivos chicos*/
 
@@ -553,11 +580,19 @@ p {
     .portada {
         width: 100%;
         height: 500px;
-        background: url("img/pendantLights.png");
+        background: url("img/lamparaMesa.png");
         background-repeat: no-repeat;
         background-size: cover;
         color: black;
-        background-position: center 10%;
+        background-position: 10%
+    }
+
+    .bg-gradient {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 31%, rgba(0, 6, 32, 0.5046393557422969) 100%);
     }
 
     .containTextPortada {
@@ -567,7 +602,6 @@ p {
         line-height: 107.5%;
         text-align: center;
         letter-spacing: -0.07em;
-        color: #2F323C;
     }
 
     /*BANNER EMPRESA - PANTALLAS CHICAS*/
