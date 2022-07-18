@@ -14,31 +14,39 @@
   <body>
     <header>
       <nav>
-        <div class="logonav">
+        <div class="logo-nav">
           <div>
             <img src="logo.png" alt="logonav" height="30px" />
           </div>
         </div>
-        <div class="search-producto-bar">
-          <a href="#buscar-producto">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </a>
-        </div>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbutton">
-          <i class="fa-solid fa-bars"></i>
-        </label>
-        <ul class="navlist">
-          <li class="navItem1"><a class="inicio" href="#">INICIO</a></li>
-          <li class="navItem2">
-            <a class="productos" href="#productos">PRODUCTOS</a>
-          </li>
-          <li class="navItem4">
-            <a class="contacto" href="#contacto-delight">CONTACTO</a>
-          </li>
-        </ul>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbutton">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul class="navlist">
+            <li class="navItem1">
+              <a class="inicio" href="#">INICIO</a>
+            </li>
+            <li class="navItem2">
+              <a class="productos" href="#productos">PRODUCTOS</a>
+            </li>
+            <li class="navItem4">
+              <a class="contacto" href="#contacto-delight">CONTACTO</a>
+            </li>
+          </ul>
       </nav>
+      <div class="search-div">
+        <div class="search-bar">
+          <div class="search-producto-bar">
+            <input type="search" placeholder="¿Qué producto buscas?" class="busqueda-nav">
+            <button class="btn-nav-search">
+             <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+           </div>
+        </div>
+      </div>
     </header>
+
     <main>
       <section class="portada">
         <div class="textoButtonPortada">
@@ -60,23 +68,7 @@
           </div>
         </div>
         <div class="bannerRight">
-          <div>
-            <form action="" class="queBuscas" id="buscar-producto">
-              <input
-                type="search"
-                class="buscarArticulo"
-                placeholder="Buscar artículo"
-              />
-              <input
-                type="submit"
-                class="consultarArticulo"
-                name="Buscar"
-                placeholder="Buscar"
-                id="Buscar"
-                value="Buscar"
-              />
-            </form>
-          </div>
+          
         </div>
       </section>
       <!--PRODUCTOS CARDS-->
@@ -185,9 +177,15 @@
         <p>Av. Nucba 2417 (CABA)</p>
 
         <div class="redes-sociales">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://ar.pinterest.com/"
+            ><i class="fa-brands fa-pinterest-p"></i
+          ></a>
         </div>
       </div>
     </footer>
