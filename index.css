@@ -582,9 +582,10 @@ p {
         height: 500px;
         background: url("img/lamparaMesa.png");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 150%;
+        background-position: 70%;
         color: black;
-        background-position: 10%
+
     }
 
     .bg-gradient {
