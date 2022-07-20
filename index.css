@@ -337,6 +337,7 @@ nav {
 .de-pie {
     background-image: url("img/de-pie1.jpg");
     background-size: cover;
+    background-position: 0 -10px;
 }
 
 .de-escritorio {
