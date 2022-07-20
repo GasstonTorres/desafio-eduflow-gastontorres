@@ -107,9 +107,6 @@ nav {
     display: none;
 }
 
-@media (max-width:750px) {}
-
-
 /*NAV - SEARCHBAR*/
 
 .search-div {
@@ -497,7 +494,7 @@ img {
         position: absolute;
         z-index: 1;
         top: 130px;
-        right: 0;
+        right: 100%;
         transition: 0.4s;
     }
 
@@ -508,13 +505,12 @@ img {
     .cart-icon {
         width: 20px;
         order: 3;
-        left: 0;
     }
 
     #burger-nav:checked~.lista-desordenada {
         top: -100;
         transition: 0.4s;
-        right: 100%;
+        right: 0;
     }
 
     .lista-desordenada ul {
@@ -530,7 +526,6 @@ img {
     .list-item-contacto {
         display: flex;
         width: 100%;
-
         justify-content: center;
         align-items: center;
         background-color: #2f323c;
