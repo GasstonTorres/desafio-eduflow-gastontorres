@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth
+}
+
 body {
     width: 100%;
     display: flex;
@@ -16,105 +20,97 @@ body {
     min-width: 300px;
 }
 
-a,
-a:visited,
-a:hover,
-a:active {
+a {
     color: inherit;
-}
-
-a i:hover {
-    color: rgba(255, 195, 32, 0.801);
+    text-decoration: inherit;
 }
 
 /* NAV BAR */
 
-header {
-    width: 100%;
-}
-
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     height: 70px;
-    background-color: #2F323C;
-    color: #f3f3f3;
+    background-color: rgb(215, 215, 215);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 5%;
+    background-color: #2f323c;
 }
 
-/*nav bar - opciones*/
-
-.logo-nav {
-    margin-left: 0px;
-}
-
-.logo-nav {
+.list-carticon {
     display: flex;
     justify-content: center;
+    align-items: center;
+    color: rgb(234, 231, 227);
 }
 
-.checkbutton {
+.fa-solid,
+.fa-brands {
+    color: #e7e7e7;
+    font-size: 20px;
+
+}
+
+.fa-solid:hover,
+.fa-brands:hover {
+    color: rgba(255, 195, 32, 0.801);
+}
+
+.fa-solid {
     display: none;
 }
 
-.navshopcart {
+
+
+.lista-desordenada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10%;
+}
+
+.lista-desordenada ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.list-item-inicio,
+.list-item-productos,
+.list-item-contacto {
+    width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.shop-cart {
-    display: block;
-    text-align: center;
-    font-size: 20px;
-    margin-left: 30px;
-}
-
-
-.navlist {
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.navlist li {
-    width: 150px;
-}
-
-.inicio,
-.productos,
-.como-comprar,
-.contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     height: 70px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-weight: 500;
-    text-decoration: none;
-    list-style: none;
-    color: #fdfdfd;
+    text-transform: uppercase;
+    color: #e7e7e7;
 }
 
-.inicio:hover,
-.productos:hover,
-.contacto:hover {
-    color: #202020;
-    transition: 0.1s;
-    background: rgba(255, 195, 32, 0.801);
+.list-items:hover {
+    background-color: #FAFAFA;
+    color: #0d1738;
+    transition: 0.4s;
 }
+
+.cart-icon {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#burger-nav,
+.burger-nav-i {
+    display: none;
+}
+
+@media (max-width:750px) {}
+
 
 /*NAV - SEARCHBAR*/
-
-
 
 .search-div {
     width: 100%;
@@ -142,6 +138,15 @@ nav {
 
 .btn-nav-search {
     width: 5%;
+}
+
+.btn-nav-search>i {
+    color: #000;
+    font-size: 16px;
+}
+
+.btn-nav-search>i:hover {
+    color: inherit;
 }
 
 /* HERO */
@@ -207,9 +212,6 @@ nav {
     color: #1c1c1d;
     border: none;
     transition: 0.3s;
-    box-shadow: -3px 42px 64px -23px rgba(0, 9, 43, 0.4);
-    -webkit-box-shadow: -3px 42px 64px -23px rgba(0, 9, 43, 0.4);
-    -moz-box-shadow: -3px 42px 64px -23px rgba(0, 9, 43, 0.4);
 }
 
 /*Banner de Empresa*/
@@ -373,53 +375,6 @@ nav {
     display: none;
 }
 
-/*FOOTER*/
-
-footer {
-    width: 100%;
-    height: auto;
-    background-color: #2f323c;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-
-
-}
-
-.footer-info {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: left;
-    color: #FAFAFA;
-    margin-left: 50px;
-    padding: 30px 0;
-}
-
-.footer-info>h1,
-h2,
-p,
-img {
-    margin: 2px 0;
-}
-
-.redes-sociales {
-    display: flex;
-    width: 100%;
-    font-size: 30px;
-    justify-content: left;
-    padding-top: 20px;
-    margin-right: 30px;
-    color: #fff;
-}
-
-.redes-sociales a i {
-    margin-right: 30px;
-}
-
-
 
 /*COMO COMPRAR*/
 
@@ -474,71 +429,111 @@ p {
     margin-top: 10px;
 }
 
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #2f323c;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.footer-info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    color: #FAFAFA;
+    margin-left: 50px;
+    padding: 30px 0;
+}
+
+.footer-info>h1,
+h2,
+p,
+img {
+    margin: 2px 0;
+}
+
+.redes-sociales {
+    display: flex;
+    width: 100%;
+    font-size: 30px;
+    justify-content: left;
+    padding-top: 20px;
+    margin-right: 30px;
+}
+
+.redes-sociales a i {
+    margin-right: 30px;
+}
+
+
 /*pantalla maxima - 720*/
 
 @media (max-width: 720px) {
 
     /*NAV Pantallas chicas*/
-    .checkbutton {
+    /* SEARCH BAR - PANTALLAS CHICAS */
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .burger-nav-i {
         display: block;
     }
 
-    .navlist {
-        height: 250px;
+    .lista-desordenada {
+        width: 100%;
+        height: 210px;
+        background-color: #dadaaa;
+        position: absolute;
+        z-index: 1;
+        top: 130px;
+        right: 0;
+        transition: 0.4s;
     }
 
-    /* SEARCH BAR - PANTALLAS CHICAS */
-
-    nav {
-        display: flex;
-        justify-content: space-beetween;
-        padding: 0 40px;
-    }
-
-    /*COMPORTAMIENTO NAV Burger*/
-
-    .checkbutton .fa-solid {
-        font-size: 26px;
-        margin-right: 10px;
+    .nav-logo {
         order: 1;
     }
 
-    .checkbutton .fa-solid:hover {
-        color: rgba(255, 195, 32, 0.801);
+    .cart-icon {
+        width: 20px;
+        order: 3;
+        left: 0;
     }
 
-    .navlist {
+    #burger-nav:checked~.lista-desordenada {
+        top: -100;
+        transition: 0.4s;
+        right: 100%;
+    }
+
+    .lista-desordenada ul {
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
+        margin-left: 0;
+    }
+
+    .list-item-inicio,
+    .list-item-productos,
+    .list-item-contacto {
+        display: flex;
+        width: 100%;
+
         justify-content: center;
         align-items: center;
-        position: absolute;
-        width: 100%;
-        top: 120px;
-        right: 100%;
-        background-color: rgba(1, 9, 43, 0.733);
-        transition: 0.3s;
-        height: auto;
-    }
-
-
-    #check:checked~.navlist {
-        right: 0;
-        transition: 0.3s;
-    }
-
-    .navlist>li {
-        width: 100%;
-        background: #2F323C;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .navlist {
-        display: flex;
-        justify-content: center;
-
+        background-color: #2f323c;
     }
 
 
@@ -550,7 +545,6 @@ p {
         display: flex;
         justify-content: center;
         justify-content: center;
-        background-color: #2F323C;
     }
 
     .search-bar {
@@ -573,9 +567,7 @@ p {
         width: 15%;
     }
 
-    .btn-nav-search>i {
-        color: #000;
-    }
+
 
     /*HERO - PANTALLAS CHICAS*/
 

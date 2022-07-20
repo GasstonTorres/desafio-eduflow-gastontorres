@@ -14,35 +14,43 @@
   <body>
     <header>
       <nav>
-        <div class="logo-nav">
-          <div>
-            <img src="logo.png" alt="logonav" height="30px" />
-          </div>
+        <div class="nav-logo">
+          <img src="logo.png" alt="logo-delight" width="150px">
         </div>
-          
-          <div class="navshopcart">
-            <input type="checkbox" id="check" />
-          <label for="check" class="checkbutton">
-            <i class="fa-solid fa-bars"></i>
+        <div class="list-carticon">
+          <input type="checkbox" id="burger-nav">
+          <label for="burger-nav" class="burger-nav-i">
+              <i class="fa-solid fa-bars"></i>
           </label>
-            <ul class="navlist">
-              <li class="navItem1">
-                <a class="inicio" href="#">INICIO</a>
-              </li>
-              <li class="navItem2">
-                <a class="productos" href="#productos">PRODUCTOS</a>
-              </li>
-              <li class="navItem4">
-                <a class="contacto" href="#contacto-delight">CONTACTO</a>
-              </li>
-            </ul>
-            <a  href="#">
-              <div class="shop-cart">
-                  <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </a>
+          <div class="lista-desordenada">
+              <ul>
+                <a href="#inicio">
+                    <div class="list-item-inicio list-items">
+                        <span>Inicio</span>
+                    </div>
+                </a>
+                <a href="#productos">
+                  <div class="list-item-inicio list-items">
+                      <li>Productos</li>
+                  </div>
+              </a>
+              <a href="#contacto">
+                <div class="list-item-inicio list-items">
+                    <li>Contacto</li>
+                </div>
+              </a>
+                
+              </ul>
           </div>
+              
+        </div>
+        <div class="cart-icon">
+          <a href="">
+          <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+    </div>
       </nav>
+  </header>
       <!-- Barra de Búsqueda -->
       <div class="search-div">
         <div class="search-bar">
@@ -178,7 +186,7 @@
     </main>
     <!--FOOTER-->
     <footer>
-      <div class="footer-info" id="contacto-delight">
+      <div class="footer-info" id="contacto">
         <h2><img src="logo.png" alt="" width="250px" /></h2>
         <p>www.delightiluminacion.com.ar</p>
         <p>Email: ventas@delightiluminacion.com</p>
